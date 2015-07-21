@@ -2,46 +2,58 @@
 
 <head>
     <link href="styles.css" rel="stylesheet">
-    <script src="animation.js" type="text/javascript"></script>
 </head>
 
 <body>
-    <div id="doubleCog"></div>
-    <div id="doubleCenter"></div>
-    <div id="dcCenter"></div>
-    <div id="bikeWheel"></div>
-    <div id="screwCog"></div>
-    <div id="screw"></div>
-    <div id="stackBot"></div>
-    <div id="stackMid"></div>
-    <div id="stackTop"></div>
-    <div id="stackLeft"></div>
-    <div id="bikeCircle"></div>
-    <div id="bikeCog"></div>
-    <div id="topCog"></div>
-    <div id="topScrewCog"></div>
-    <div id="leftBlueCog"></div>
-    <div id="leftBlueCenter"></div>
-    <div id="leftDashCircle"></div>
-    <div id="weight"></div>
+    <div class="COG-Project">
+        <div class="staticCog">
+            <div id="doubleCog"></div>
+        </div>
+
+        <div class="topStaticCenter">
+            <div id="doubleCenter"></div>
+            <div id="dcCenter"></div>
+        </div>
+
+        <div class="bikeWheelAssembly">
+            <div id="bikeWheel"></div>
+            <div id="bikeCircle"></div>
+            <div id="bikeCog"></div>
+        </div>
+
+        <div class="screwSet">
+            <div id="screwCog"></div>
+            <div id="screw"></div>
+        </div>
+
+        <div class="stackSet">
+            <div id="stackBot"></div>
+            <div id="stackMid"></div>
+            <div id="stackTop"></div>
+            <div id="stackLeft"></div>
+        </div>
+
+        <div class="topCogs">
+            <div id="topCog"></div>
+            <div id="topScrewCog"></div>
+        </div>
+
+        <div class="weightAssembly">
+            <div id="leftBlueCog"></div>
+            <div id="leftBlueCenter"></div>
+            <div id="leftDashCircle"></div>
+            <div id="weightChain"></div>
+            <div id="weight"></div>
+        </div>
+        
+        <div class="LogoAssembly">
+            <div id="rightBlueCog"></div>
+            <div id="rightBlueCenter"></div>
+            <div id="rightDashCircle"></div>
+            <div id="logoChain"></div>
+            <img id="logo" src="logo_balance.png" width="100">
+        </div>
+    </div>
 </body>
-
-<script>
-    clockWise("doubleCenter", 40);
-    antiClockWise("dcCenter", 40);
-    antiClockWise("bikeWheel", 70);
-    antiClockWise("screwCog", 50);
-    antiClockWise("screw", 50);
-    clockWise("stackBot", 50);
-    antiClockWise("stackMid", 50);
-    clockWise("stackTop", 50);
-    antiClockWise("stackLeft", 50);
-    clockWise("bikeCog", 50);
-    antiClockWise("topCog", 50);
-    clockWise("topScrewCog", 50);
-    antiClockWise("leftBlueCog", 50);
-    clockWise("leftBlueCenter", 50);
-</script>
-
 
 </html>

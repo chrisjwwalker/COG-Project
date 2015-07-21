@@ -25,6 +25,14 @@ body {
     height: 241px;
     background: url('gears.png') 325px -275px;
     z-index: 2;
+    animation-name: rotateClock;
+    animation-duration: 12000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation-name: rotateClock;
+    -webkit-animation-duration: 12000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
 }
 
 /*Smaller light gree cog in the middle of the cog styled above.*/
@@ -36,6 +44,14 @@ body {
     height: 115px;
     background: url('gears.png') 325px 3px;
     z-index: 3;
+    animation: rotateAntiClock;
+    animation-duration: 8000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation-name: rotateAntiClock;
+    -webkit-animation-duration: 8000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
 }
 
 
@@ -48,72 +64,17 @@ body {
     height: 321px;
     background: url('gears.png') -0px -993px;
     z-index: 1;
+    animation: rotateAntiClock;
+    animation-duration: 15000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation-name: rotateAntiClock;
+    -webkit-animation-duration: 15000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
 }
 
-/*Small Teal cog below #doubleCenter */
-#screwCog {
-    left: 765px;
-    top: 450px;
-    position: absolute;
-    width: 141px;
-    height: 141px;
-    background: url('gears.png') 4px 296px;
-    z-index: 2;
-    transform: rotate(30deg);
-}
-
-/*Screw top looking circle in the middle of #screwCog*/
-#screw {
-    left: 800px;
-    top: 485px;
-    position: absolute;
-    width: 70px;
-    height: 70px;
-    background: url('gears.png') 0px -1627px;
-    z-index: 2;
-}
-
-#stackBot {
-    left: 672px;
-    top: 550px;
-    position: absolute;
-    width: 164px;
-    height: 164px;
-    background: url('gears.png') 0 -530px;
-    z-index: 2;
-    transform: rotate(5deg);
-}
-
-#stackMid {
-    left: 700px;
-    top: 577px;
-    position: absolute;
-    width: 108px;
-	height: 108px;
-	background: url('gears.png') -371px 0;
-    z-index: 3;
-}
-
-#stackTop {
-    left: 717px;
-    top: 597;
-    position: absolute;
-    width: 72px;
-	height: 72px;
-	background: url('gears.png') -371px -158px;
-    z-index: 4;
-}
-
-#stackLeft {
-    left: 550px;
-    top: 565px;
-    position: absolute;
-    width: 135px;
-	height: 134px;
-	background: url('gears.png') no-repeat 0 0;
-    z-index: 2;
-    transform: rotate(21deg);
-}
+/*Green circle in the center of #bikeWheel*/
 #bikeCircle {
     left: 610px;
     top: 465px;
@@ -124,6 +85,7 @@ body {
     z-index: 2;
 }
 
+/*Green cog in the center of #bikeCircle*/
 #bikeCog {
     left: 622px;
     top: 478px;
@@ -132,28 +94,171 @@ body {
 	height: 62px;
     background: url('gears.png') no-repeat 0 -744px;
     z-index: 3;
+    animation: rotateClock;
+    animation-duration: 15000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation-name: rotateClock;
+    -webkit-animation-duration: 15000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
 }
 
+/*Small Teal cog below #doubleCenter */
+#screwCog {
+    left: 755px;
+    top: 460px;
+    position: absolute;
+    width: 141px;
+    height: 141px;
+    background: url('gears.png') 4px 296px;
+    z-index: 2;
+    transform: rotate(10deg);
+    animation-name: rotateAntiClock;
+    animation-duration: 10000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation-name: rotateAntiClock;
+    -webkit-animation-duration: 10000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}
+
+/*Screw top looking circle in the middle of #screwCog*/
+#screw {
+    left: 791px;
+    top: 495px;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background: url('gears.png') 0px -1627px;
+    z-index: 2;
+    animation-name: rotateAntiClock;
+    animation-duration: 10000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation-name: rotateAntiClock;
+    -webkit-animation-duration: 10000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}
+
+/*Bottom of three stacked cogs below #screwCog*/
+#stackBot {
+    left: 666px;
+    top: 567px;
+    position: absolute;
+    width: 164px;
+    height: 164px;
+    background: url('gears.png') 0 -530px;
+    z-index: 2;
+    transform: rotate(5deg);
+    animation: rotateClock;
+    animation-duration: 8000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation-name: rotateClock;
+    -webkit-animation-duration: 8000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}
+
+/*Middle green cog of stack*/
+#stackMid {
+    left: 694px;
+    top: 595px;
+    position: absolute;
+    width: 108px;
+	height: 108px;
+	background: url('gears.png') -371px 0;
+    z-index: 3;
+    animation: rotateAntiClock;
+    animation-duration: 8000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation-name: rotateAntiClock;
+    -webkit-animation-duration: 8000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}
+
+/*Top cog of the stack*/
+#stackTop {
+    left: 712px;
+    top: 613px;
+    position: absolute;
+    width: 72px;
+	height: 72px;
+	background: url('gears.png') -371px -158px;
+    z-index: 4;
+    animation: rotateClock;
+    animation-duration: 8000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation-name: rotateClock;
+    -webkit-animation-duration: 8000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}
+
+/*Light blue cog left of the stack of three cogs.*/
+#stackLeft {
+    left: 541px;
+    top: 565px;
+    position: absolute;
+    width: 135px;
+	height: 134px;
+	background: url('gears.png') no-repeat 0 0;
+    z-index: 2;
+    animation: rotateAntiClock;
+    animation-duration: 10000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation-name: rotateAntiClock;
+    -webkit-animation-duration: 10000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}
+
+/*Dark blue cog above #doubleCenter*/
 #topCog {
-    left: 622px;
-    top: 160px;
+    left: 630px;
+    top: 154px;
     position: absolute;
     width: 122px;
 	height: 122px;
     background: url('gears.png') 0 -184px;
     z-index: 1;
+    animation: rotateAntiClock;
+    animation-duration: 8000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation-name: rotateAntiClock;
+    -webkit-animation-duration: 8000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
 }
 
+/*Cog in the middle of #topCog*/
 #topScrewCog {
-    left: 640px;
-    top: 180px;
+    left: 648px;
+    top: 173px;
     position: absolute;
     width: 85px;
 	height: 84px;
     background: url('gears.png') no-repeat 0 -1493px;
     z-index: 2;
+    animation: rotateClock;
+    animation-duration: 8000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation-name: rotateClock;
+    -webkit-animation-duration: 8000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
 }
 
+/*Start cog group connected to the animated weight*/
 #leftBlueCog {
     left: 470px;
     top: 280px;
@@ -162,6 +267,16 @@ body {
 	height: 135px;
     background: url('gears.png') no-repeat 0 -1746px;
     z-index: 2;
+    animation: rotateAntiClock;
+    animation-duration: 8000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    -webkit-animation-name: rotateAntiClock;
+    -webkit-animation-duration: 8000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-direction: alternate;
 }
 
 #leftBlueCenter {
@@ -171,6 +286,16 @@ body {
 	width: 80px;
 	height: 79px;
     background: url('gears.png') no-repeat 0 -1364px;
+    animation-name: rotateClock;
+    animation-duration: 8000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    -webkit-animation-name: rotateClock;
+    -webkit-animation-duration: 8000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-direction: alternate;
 }
 
 #leftDashCircle {
@@ -180,28 +305,254 @@ body {
     width: 146px;
 	height: 147px;
     background: url('gears.png') no-repeat -371px -706px;
+    animation: rotateAntiClock;
+    animation-duration: 8000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    -webkit-animation-name: rotateAntiClock;
+    -webkit-animation-duration: 8000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-direction: alternate;
 }
 
+/*Chain between cog system and weight*/
+#weightChain {
+    left: 464px;
+    top: 340px;
+    position: absolute;
+    width: 1px;
+    height: 300px;
+    border-right: 2px dotted #A6BB45;
+    animation-name: weightChain;
+    animation-duration: 8000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    -webkit-animation-name: weightChain;
+    -webkit-animation-duration: 8000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-direction: alternate;
+}
+
+/*Weight that's animated along the Y axis*/
 #weight {
-    left: 452px;
-    top: 410px;
+    left: 449px;
+    top: 610px;
     position: absolute;
     width: 34px;
 	height: 92px;
     background: url('gears.png') no-repeat -371px -564px;
-    animation-name: example;
-    animation-duration: 4s;
+    animation-name: weightAnimate;
+    animation-duration: 8000ms;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    animation-timing-function: linear;
+    -webkit-animation-name: weightAnimate;
+    -webkit-animation-duration: 8000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-direction: alternate;
+}
+/*End cog group connected to the animated weight*/
+
+/*Start cog group connected to the animated */
+#rightBlueCog {
+    left: 850px;
+    top: 180px;
+    position: absolute;
+    width: 134px;
+	height: 135px;
+    background: url('gears.png') no-repeat 0 -1746px;
+    z-index: 2;
+    animation: rotateAntiClock;
+    animation-duration: 8000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    -webkit-animation-name: rotateAntiClock;
+    -webkit-animation-duration: 8000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-direction: alternate;
 }
 
+#rightBlueCenter {
+    left: 876px;
+    top: 207px;
+    position: absolute;
+	width: 80px;
+	height: 79px;
+    background: url('gears.png') no-repeat 0 -1364px;
+    animation: rotateClock;
+    animation-duration: 8000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    -webkit-animation-name: rotateClock;
+    -webkit-animation-duration: 8000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-direction: alternate;
+}
+
+#rightDashCircle {
+    left: 844px;
+    top: 173px;
+    position: absolute;
+    width: 146px;
+	height: 147px;
+    background: url('gears.png') no-repeat -371px -706px;
+    animation: rotateAntiClock;
+    animation-duration: 8000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    -webkit-animation-name: rotateAntiClock;
+    -webkit-animation-duration: 8000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-direction: alternate;
+}
+
+#logoChain {
+    left: 987px;
+    top: 240px;
+    position: absolute;
+    width: 1px;
+    height: 300px;
+    border-right: 2px dotted #A6BB45;
+    animation-name: logoChain;
+    animation-duration: 8000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    -webkit-animation-name: logoChain;
+    -webkit-animation-duration: 8000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-direction: alternate;
+}
+
+#logo {
+    left: 940px;
+    top: 510px;
+    position: absolute;
+    width: 100px;
+    animation-name: logoAnimate;
+    animation-duration: 8000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    -webkit-animation-name: logoAnimate;
+    -webkit-animation-duration: 8000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-direction: alternate;
+}
 
 /* The animation code */
-@keyframes example {
+
+@keyframes weightAnimate {
     from {
         top: 410px;
     }
     to {
         top: 610px;
+    }
+}
+
+@keyframes weightChain {
+    from {
+        height: 100px;
+    }
+    to {
+        height: 300px;
+    }
+}
+
+@keyframes logoChain {
+    from {
+        height: 300px;
+    }
+    to {
+        height: 100px;
+    }
+}
+
+@keyframes logoAnimate {
+    from {
+        top: 510px;
+    }
+    to {
+        top: 310px;
+    }
+}
+
+@keyframes rotateClock {
+    from {
+        transform: rotate(0deg);
+    }
+    
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotateAntiClock {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+/*To Work With Safari*/
+@-webkit-keyframes rotateClock {
+    0% { -webkit-transform: rotate(0deg);}
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@-webkit-keyframes rotateAntiClock {
+    0% { -webkit-transform: rotate(0deg);}
+    100% { -webkit-transform: rotate(-360deg); }
+}
+
+@-webkit-keyframes weightAnimate {
+    0% {
+        top: 410px;
+    }
+    100% {
+        top: 610px;
+    }
+}
+
+@-webkit-keyframes weightChain {
+    0% {
+        height: 100px
+    }
+    100% {
+        height: 300px;
+    }
+}
+
+@-webkit-keyframes logoChain {
+    0% {
+        height: 300px;
+    }
+    100% {
+        height: 100px;
+    }
+}
+
+@-webkit-keyframes logoAnimate {
+    0% {
+        top: 510px;
+    }
+    100% {
+        top: 310px;
     }
 }
