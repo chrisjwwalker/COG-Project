@@ -1,59 +1,78 @@
+<!--------------------------------------
+
+
+    Chris J W Walker 2015
+
+    Cog Project
+
+    Layout of <div> containing cogs
+
+    Styled with styles.css
+
+---------------------------------------->
+
 <html>
-
-<head>
-    <link href="styles.css" rel="stylesheet">
-</head>
-
-<body>
-    <div class="COG-Project">
-        <div class="staticCog">
-            <div id="doubleCog"></div>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    
+    <body>
+        <div class="COG-Project">
+            <!-- Large background static cogs -->
+            <div class="staticCog">
+                <div id="doubleCog"></div>
+            </div>
+            
+            <!-- Rotating cogs in center of the static cogs -->
+            <div class="topStaticCenter">
+                <div id="doubleCenter"></div>
+                <div id="dcCenter"></div>
+            </div>
+            
+            <!-- Bike wheel, green circle, small green cog -->
+            <div class="bikeWheelAssembly">
+                <div id="bikeWheel"></div>
+                <div id="bikeCircle"></div>
+                <div id="bikeCog"></div>
+            </div>
+            
+            <!-- Cog set below div id #doubleCenter -->
+            <div class="screwSet">
+                <div id="screwCog"></div>
+                <div id="screw"></div>
+            </div>
+            
+            <!-- Stack of three cogs near bottom -->
+            <div class="stackSet">
+                <div id="stackBot"></div>
+                <div id="stackMid"></div>
+                <div id="stackTop"></div>
+                <div id="stackLeft"></div>
+            </div>
+            
+            <!-- Cog set at the very top -->
+            <div class="topCogs">
+                <div id="topCog"></div>
+                <div id="topScrewCog"></div>
+            </div>
+            
+            <!-- Cog assembly connected to weight and its chain; all on left hand side -->
+            <div class="weightAssembly">
+                <div id="leftBlueCog"></div>
+                <div id="leftBlueCenter"></div>
+                <div id="leftDashCircle"></div>
+                <div id="weightChain"></div>
+                <div id="weight"></div>
+            </div>
+            
+            <!-- Cog assembly connected to logo and its chain; all on right hand side -->
+            <div class="LogoAssembly">
+                <div id="rightBlueCog"></div>
+                <div id="rightBlueCenter"></div>
+                <div id="rightDashCircle"></div>
+                <div id="logoChain"></div>
+                <img id="logo" src="logo_balance.png" width="100">
+            </div>
         </div>
-
-        <div class="topStaticCenter">
-            <div id="doubleCenter"></div>
-            <div id="dcCenter"></div>
-        </div>
-
-        <div class="bikeWheelAssembly">
-            <div id="bikeWheel"></div>
-            <div id="bikeCircle"></div>
-            <div id="bikeCog"></div>
-        </div>
-
-        <div class="screwSet">
-            <div id="screwCog"></div>
-            <div id="screw"></div>
-        </div>
-
-        <div class="stackSet">
-            <div id="stackBot"></div>
-            <div id="stackMid"></div>
-            <div id="stackTop"></div>
-            <div id="stackLeft"></div>
-        </div>
-
-        <div class="topCogs">
-            <div id="topCog"></div>
-            <div id="topScrewCog"></div>
-        </div>
-
-        <div class="weightAssembly">
-            <div id="leftBlueCog"></div>
-            <div id="leftBlueCenter"></div>
-            <div id="leftDashCircle"></div>
-            <div id="weightChain"></div>
-            <div id="weight"></div>
-        </div>
-        
-        <div class="LogoAssembly">
-            <div id="rightBlueCog"></div>
-            <div id="rightBlueCenter"></div>
-            <div id="rightDashCircle"></div>
-            <div id="logoChain"></div>
-            <img id="logo" src="logo_balance.png" width="100">
-        </div>
-    </div>
-</body>
-
+    </body>
 </html>

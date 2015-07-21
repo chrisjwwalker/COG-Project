@@ -1,11 +1,25 @@
-/*Start of main body section styling.*/
+/*---------------------------------------------------
+
+
+    Chris J W Walker 2015
+
+    Cog Project
+
+    Styling fo cog positions and defines CSS3
+    animations
+
+---------------------------------------------------*/
+
+/*Body background colour*/
 body {
     background-color: black;
 }
 
-/*End of main body section stylin.g*/
 
-/*Two Large static cogs.*/
+
+
+
+/*Background cogs; The two large static cogs*/
 #doubleCog {
     left: 600px;
     top: 200px;
@@ -16,7 +30,11 @@ body {
     z-index: 0;
 }
 
-/*Light Blue Cog in middle of the two.*/
+
+
+
+
+/*Two cogs with the large static; outer cog (blue) then inner cog (green)*/
 #doubleCenter {
     left: 649px;
     top: 242.6px;
@@ -35,7 +53,6 @@ body {
     -webkit-animation-timing-function: linear;
 }
 
-/*Smaller light gree cog in the middle of the cog styled above.*/
 #dcCenter {
     left: 713px;
     top: 308px;
@@ -55,7 +72,10 @@ body {
 }
 
 
-/*Large cog with bike spokes.*/
+
+
+
+/*Bike wheel cog assembly; Cog with spokes, then green circle, finally small green cog*/
 #bikeWheel {
     left: 495px;
     top: 345px;
@@ -74,7 +94,6 @@ body {
     -webkit-animation-timing-function: linear;
 }
 
-/*Green circle in the center of #bikeWheel*/
 #bikeCircle {
     left: 610px;
     top: 465px;
@@ -85,7 +104,6 @@ body {
     z-index: 2;
 }
 
-/*Green cog in the center of #bikeCircle*/
 #bikeCog {
     left: 622px;
     top: 478px;
@@ -104,7 +122,11 @@ body {
     -webkit-animation-timing-function: linear;
 }
 
-/*Small Teal cog below #doubleCenter */
+
+
+
+
+/*Cog assembly below div id #doubleCenter*/
 #screwCog {
     left: 755px;
     top: 460px;
@@ -124,7 +146,6 @@ body {
     -webkit-animation-timing-function: linear;
 }
 
-/*Screw top looking circle in the middle of #screwCog*/
 #screw {
     left: 791px;
     top: 495px;
@@ -143,7 +164,11 @@ body {
     -webkit-animation-timing-function: linear;
 }
 
-/*Bottom of three stacked cogs below #screwCog*/
+
+
+
+
+/*Stack of three cogs near bottom. Order; Bottom > Middle > Top*/
 #stackBot {
     left: 666px;
     top: 567px;
@@ -163,7 +188,6 @@ body {
     -webkit-animation-timing-function: linear;
 }
 
-/*Middle green cog of stack*/
 #stackMid {
     left: 694px;
     top: 595px;
@@ -182,7 +206,6 @@ body {
     -webkit-animation-timing-function: linear;
 }
 
-/*Top cog of the stack*/
 #stackTop {
     left: 712px;
     top: 613px;
@@ -200,6 +223,10 @@ body {
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
 }
+
+
+
+
 
 /*Light blue cog left of the stack of three cogs.*/
 #stackLeft {
@@ -220,7 +247,11 @@ body {
     -webkit-animation-timing-function: linear;
 }
 
-/*Dark blue cog above #doubleCenter*/
+
+
+
+
+/*Pair of cogs at the top*/
 #topCog {
     left: 630px;
     top: 154px;
@@ -239,7 +270,6 @@ body {
     -webkit-animation-timing-function: linear;
 }
 
-/*Cog in the middle of #topCog*/
 #topScrewCog {
     left: 648px;
     top: 173px;
@@ -258,7 +288,11 @@ body {
     -webkit-animation-timing-function: linear;
 }
 
-/*Start cog group connected to the animated weight*/
+
+
+
+
+/*Cog assmebly linked to the weight on the left hand side*/
 #leftBlueCog {
     left: 470px;
     top: 280px;
@@ -317,7 +351,11 @@ body {
     -webkit-animation-direction: alternate;
 }
 
-/*Chain between cog system and weight*/
+
+
+
+
+/*"Chain" and attached weight*/
 #weightChain {
     left: 464px;
     top: 340px;
@@ -337,7 +375,6 @@ body {
     -webkit-animation-direction: alternate;
 }
 
-/*Weight that's animated along the Y axis*/
 #weight {
     left: 449px;
     top: 610px;
@@ -356,9 +393,12 @@ body {
     -webkit-animation-timing-function: linear;
     -webkit-animation-direction: alternate;
 }
-/*End cog group connected to the animated weight*/
 
-/*Start cog group connected to the animated */
+
+
+
+
+/*Cog assmebly linked to the logo on the right hand side*/
 #rightBlueCog {
     left: 850px;
     top: 180px;
@@ -417,6 +457,11 @@ body {
     -webkit-animation-direction: alternate;
 }
 
+
+
+
+
+/*"Chain" and attached logo*/
 #logoChain {
     left: 987px;
     top: 240px;
@@ -453,8 +498,13 @@ body {
     -webkit-animation-direction: alternate;
 }
 
-/* The animation code */
 
+
+
+
+/*Animation Code*/
+
+/*Animation of the weight; weightAnimate moving the weight along the Y Axis, weightChain animating the length of the line*/
 @keyframes weightAnimate {
     from {
         top: 410px;
@@ -473,15 +523,11 @@ body {
     }
 }
 
-@keyframes logoChain {
-    from {
-        height: 300px;
-    }
-    to {
-        height: 100px;
-    }
-}
 
+
+
+
+/*Animation of the logo; logoAnimate moves the logo along the Y Axis, logoChain animation the length of the line*/
 @keyframes logoAnimate {
     from {
         top: 510px;
@@ -491,6 +537,20 @@ body {
     }
 }
 
+@keyframes logoChain {
+    from {
+        height: 300px;
+    }
+    to {
+        height: 100px;
+    }
+}
+
+
+
+
+
+/*CSS3 animation concerning the rotation of the cogs*/
 @keyframes rotateClock {
     from {
         transform: rotate(0deg);
@@ -510,23 +570,26 @@ body {
     }
 }
 
-/*To Work With Safari*/
-@-webkit-keyframes rotateClock {
-    0% { -webkit-transform: rotate(0deg);}
-    100% { -webkit-transform: rotate(360deg); }
-}
 
-@-webkit-keyframes rotateAntiClock {
-    0% { -webkit-transform: rotate(0deg);}
-    100% { -webkit-transform: rotate(-360deg); }
-}
 
+
+
+/*Same animation functions as above, but written to support to Safari*/
 @-webkit-keyframes weightAnimate {
     0% {
         top: 410px;
     }
     100% {
         top: 610px;
+    }
+}
+
+@-webkit-keyframes logoAnimate {
+    0% {
+        top: 510px;
+    }
+    100% {
+        top: 310px;
     }
 }
 
@@ -548,11 +611,12 @@ body {
     }
 }
 
-@-webkit-keyframes logoAnimate {
-    0% {
-        top: 510px;
-    }
-    100% {
-        top: 310px;
-    }
+@-webkit-keyframes rotateClock {
+    0% { -webkit-transform: rotate(0deg);}
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@-webkit-keyframes rotateAntiClock {
+    0% { -webkit-transform: rotate(0deg);}
+    100% { -webkit-transform: rotate(-360deg); }
 }
