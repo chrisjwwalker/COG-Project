@@ -1,0 +1,207 @@
+/*Start of main body section styling.*/
+body {
+    background-color: black;
+}
+
+/*End of main body section stylin.g*/
+
+/*Two Large static cogs.*/
+#doubleCog {
+    left: 600px;
+    top: 200px;
+    position: absolute;
+    width: 334px;
+    height: 607px;
+    background: url('gears.png') 334px 1321px;
+    z-index: 0;
+}
+
+/*Light Blue Cog in middle of the two.*/
+#doubleCenter {
+    left: 649px;
+    top: 242.6px;
+    position: absolute;
+    width: 241px;
+    height: 241px;
+    background: url('gears.png') 325px -275px;
+    z-index: 2;
+}
+
+/*Smaller light gree cog in the middle of the cog styled above.*/
+#dcCenter {
+    left: 713px;
+    top: 308px;
+    position: absolute;
+    width: 115px;
+    height: 115px;
+    background: url('gears.png') 325px 3px;
+    z-index: 3;
+}
+
+
+/*Large cog with bike spokes.*/
+#bikeWheel {
+    left: 495px;
+    top: 345px;
+    position: absolute;
+    width: 321px;
+    height: 321px;
+    background: url('gears.png') -0px -993px;
+    z-index: 1;
+}
+
+/*Small Teal cog below #doubleCenter */
+#screwCog {
+    left: 765px;
+    top: 450px;
+    position: absolute;
+    width: 141px;
+    height: 141px;
+    background: url('gears.png') 4px 296px;
+    z-index: 2;
+    transform: rotate(30deg);
+}
+
+/*Screw top looking circle in the middle of #screwCog*/
+#screw {
+    left: 800px;
+    top: 485px;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background: url('gears.png') 0px -1627px;
+    z-index: 2;
+}
+
+#stackBot {
+    left: 672px;
+    top: 550px;
+    position: absolute;
+    width: 164px;
+    height: 164px;
+    background: url('gears.png') 0 -530px;
+    z-index: 2;
+    transform: rotate(5deg);
+}
+
+#stackMid {
+    left: 700px;
+    top: 577px;
+    position: absolute;
+    width: 108px;
+	height: 108px;
+	background: url('gears.png') -371px 0;
+    z-index: 3;
+}
+
+#stackTop {
+    left: 717px;
+    top: 597;
+    position: absolute;
+    width: 72px;
+	height: 72px;
+	background: url('gears.png') -371px -158px;
+    z-index: 4;
+}
+
+#stackLeft {
+    left: 550px;
+    top: 565px;
+    position: absolute;
+    width: 135px;
+	height: 134px;
+	background: url('gears.png') no-repeat 0 0;
+    z-index: 2;
+    transform: rotate(21deg);
+}
+#bikeCircle {
+    left: 610px;
+    top: 465px;
+    position: absolute;
+    width: 87px;
+	height: 87px;
+	background: url('gears.png') no-repeat 0 -856px;
+    z-index: 2;
+}
+
+#bikeCog {
+    left: 622px;
+    top: 478px;
+    position: absolute;
+    width: 62px;
+	height: 62px;
+    background: url('gears.png') no-repeat 0 -744px;
+    z-index: 3;
+}
+
+#topCog {
+    left: 622px;
+    top: 160px;
+    position: absolute;
+    width: 122px;
+	height: 122px;
+    background: url('gears.png') 0 -184px;
+    z-index: 1;
+}
+
+#topScrewCog {
+    left: 640px;
+    top: 180px;
+    position: absolute;
+    width: 85px;
+	height: 84px;
+    background: url('gears.png') no-repeat 0 -1493px;
+    z-index: 2;
+}
+
+#leftBlueCog {
+    left: 470px;
+    top: 280px;
+    position: absolute;
+    width: 134px;
+	height: 135px;
+    background: url('gears.png') no-repeat 0 -1746px;
+    z-index: 2;
+}
+
+#leftBlueCenter {
+    left: 497px;
+    top: 309px;
+    position: absolute;
+	width: 80px;
+	height: 79px;
+    background: url('gears.png') no-repeat 0 -1364px;
+}
+
+#leftDashCircle {
+    left: 465px;
+    top: 275px;
+    position: absolute;
+    width: 146px;
+	height: 147px;
+    background: url('gears.png') no-repeat -371px -706px;
+}
+
+#weight {
+    left: 452px;
+    top: 410px;
+    position: absolute;
+    width: 34px;
+	height: 92px;
+    background: url('gears.png') no-repeat -371px -564px;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+/* The animation code */
+@keyframes example {
+    from {
+        top: 410px;
+    }
+    to {
+        top: 610px;
+    }
+}
